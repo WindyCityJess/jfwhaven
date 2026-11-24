@@ -143,7 +143,6 @@ getinput(void)
 
 	horizvel=0;
 
-	{ extern int misterjoydpadstrafekey; misterjoydpadstrafekey = keys[KEYSTRAFE]; }   // MiSTer: d-pad left/right strafe (patch_dpadstrafe_game.py)
 	if(keystatus[keys[KEYSTRAFE]] == 0) {
 		if(keystatus[keys[KEYLEFT]] > 0 || keystatus[RLEFT] > 0) {
 			angvel-=16*TICSPERFRAME;
